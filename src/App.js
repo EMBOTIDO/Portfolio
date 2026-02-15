@@ -93,15 +93,15 @@ function App() {
             <div className="hero-contact-bar">
               <div className="contact-bar-item">
                 <span className="contact-bar-icon">📧</span>
-                <a href="mailto:irishlince03@gmail.com">irishlince03@gmail.com</a>
+                <a href="mailto:Enriquez2220933@mkt.ceu.edu.ph">Enriquez2220933@mkt.ceu.edu.ph</a>
               </div>
               <div className="contact-bar-item">
                 <span className="contact-bar-icon">📱</span>
-                <a href="tel:+639394123330">+63 939 412 3330</a>
+                <a href="tel:+639624393278">+63 962 439 3278</a>
               </div>
               <div className="contact-bar-item">
                 <span className="contact-bar-icon">📍</span>
-                <span>Pasay City, Metro Manila, Philippines</span>
+                <span>Manila City, Metro Manila, Philippines</span>
               </div>
             </div>
           </div>
