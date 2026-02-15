@@ -3,12 +3,7 @@ import './App.css';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [formStatus, setFormStatus] = useState('');
+  
   const [expandedProject, setExpandedProject] = useState(null);
 
   // Project links - Update these with your actual project URLs
@@ -31,27 +26,7 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to a backend
-    // For now, we'll just show a success message
-    setFormStatus('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-    
-    // Clear the message after 5 seconds
-    setTimeout(() => {
-      setFormStatus('');
-    }, 5000);
-  };
-
+  
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
