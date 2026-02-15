@@ -241,7 +241,7 @@ function App() {
                 onClick={() => toggleProject('library')}
               >
                 <div className="project-header-content">
-                  <h3>Library Management System</h3>
+                  <h3>Bus Reservation System</h3>
                 </div>
                 <span className={`project-toggle ${expandedProject === 'library' ? 'expanded' : ''}`}>
                   ▼
@@ -249,12 +249,11 @@ function App() {
               </div>
               <div className={`project-details ${expandedProject === 'library' ? 'expanded' : ''}`}>
                 <p className="project-description">
-                A Library Management System is a digital solution designed to streamline the management of libraries, making it easier to organize, track, and access books and other resources. It allows librarians to catalog books, manage member accounts, handle check-ins and check-outs and track overdue items. For users, it provides a simple way to search for available materials and reserve books. The Library Management System  enhances library operations, improves resource accessibility, and delivers a seamless experience for both staff and readers.                </p>
-                <div className="project-role">
+                  A Bus Reservation System is an online platform that allows passengers to search, select, and book bus tickets and efficiently. Users can view available routes, departure schedules, seat availability, and ticket prices. The system provides online payments, instant booking confirmation, and digital ticket generation. For operators, it offers tools to manage routes, schedules, seat allocation, and passenger records. the system improves convenience, reduces manual workload, and enhances overall travel management for both passengers and bus companies.</p>                  <div className="project-role">
                   <strong>Role:</strong> Frontend Developer
                 </div>
                 <div className="project-tech">
-                  <span>JavaScript</span>
+                  <span>Figma</span>
                 </div>
                 <div className="project-links">
                   {projectLinks.libraryManagement ? (
