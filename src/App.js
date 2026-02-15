@@ -66,10 +66,10 @@ function App() {
         <nav>
           <h1 className="logo" onClick={() => scrollToSection('hero')}>Nico Faith</h1>
           <ul className="nav-links">
+            <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
             <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
             <li><a href="#skills" onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}>Skills</a></li>
             <li><a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>Projects</a></li>
-            <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -83,9 +83,7 @@ function App() {
               <span className="name">Nico Faith Enriquez</span>
             </h2>
             <div className="hero-buttons">
-              <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
-                Get in Touch
-              </button>
+            
               <button className="btn btn-secondary" onClick={() => scrollToSection('projects')}>
                 View My Work
               </button>
@@ -176,85 +174,85 @@ function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="skills">
-        <div className="container">
-          <h2 className="section-title">Skills</h2>
-          <div className="skills-wrapper">
-            {/* Hard Skills */}
-            <div className="skills-category">
-              <h3 className="skills-category-title">
-                <span className="category-icon">{"</>"}</span>
-                HARD SKILLS
-              </h3>
-              <div className="skills-list">
-                <div className="skill-item">
-                  <span className="skill-icon skill-icon-small">HTML</span>
-                  <span className="skill-label">HTML</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon skill-icon-small">CSS</span>
-                  <span className="skill-label">CSS</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">JS</span>
-                  <span className="skill-label">JavaScript</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">⚛️</span>
-                  <span className="skill-label">React.js</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">▲</span>
-                  <span className="skill-label">Next.js</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🍃</span>
-                  <span className="skill-label">MongoDB</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🗄️</span>
-                  <span className="skill-label">MySQL</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🟢</span>
-                  <span className="skill-label">Node.js</span>
+        {/* Skills Section */}
+        <section id="skills" className="skills">
+          <div className="container">
+            <h2 className="section-title">Skills</h2>
+            <div className="skills-wrapper">
+              {/* Hard Skills */}
+              <div className="skills-category">
+                <h3 className="skills-category-title">
+                  <span className="category-icon">{"</>"}</span>
+                  HARD SKILLS
+                </h3>
+                <div className="skills-list">
+                  <div className="skill-item">
+                    <span className="skill-icon skill-icon-small">HTML</span>
+                    <span className="skill-label">HTML</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon skill-icon-small">CSS</span>
+                    <span className="skill-label">CSS</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">JS</span>
+                    <span className="skill-label">JavaScript</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">⚛️</span>
+                    <span className="skill-label">React.js</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">▲</span>
+                    <span className="skill-label">Next.js</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🍃</span>
+                    <span className="skill-label">MongoDB</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🗄️</span>
+                    <span className="skill-label">MySQL</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🟢</span>
+                    <span className="skill-label">Node.js</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Soft Skills */}
-            <div className="skills-category">
-              <h3 className="skills-category-title">
-                <span className="category-icon">👥</span>
-                SOFT SKILLS
-              </h3>
-              <div className="skills-list">
-                <div className="skill-item">
-                  <span className="skill-icon">🧠</span>
-                  <span className="skill-label">Critical Thinking And Analysis</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🔧</span>
-                  <span className="skill-label">Problem Solving Troubleshooting</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🔄</span>
-                  <span className="skill-label">Adaptability</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">👂</span>
-                  <span className="skill-label">Active Listening</span>
-                </div>
-                <div className="skill-item">
-                  <span className="skill-icon">🤝</span>
-                  <span className="skill-label">Ability to work in a team</span>
+              {/* Soft Skills */}
+              <div className="skills-category">
+                <h3 className="skills-category-title">
+                  <span className="category-icon">👥</span>
+                  SOFT SKILLS
+                </h3>
+                <div className="skills-list">
+                  <div className="skill-item">
+                    <span className="skill-icon">🧠</span>
+                    <span className="skill-label">Critical Thinking And Analysis</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🔧</span>
+                    <span className="skill-label">Problem Solving Troubleshooting</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🔄</span>
+                    <span className="skill-label">Adaptability</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">👂</span>
+                    <span className="skill-label">Active Listening</span>
+                  </div>
+                  <div className="skill-item">
+                    <span className="skill-icon">🤝</span>
+                    <span className="skill-label">Ability to work in a team</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Projects Section */}
       <section id="projects" className="projects">
@@ -391,58 +389,7 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact">
-        <div className="container">
-          <h2 className="section-title">Contact Me</h2>
-          <div className="contact-content">
-            <div className="contact-info">
-              <h3>Let's Connect!</h3>
-              <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-            </div>
-            <form className="contact-form" onSubmit={handleSubmit}>
-              {formStatus && (
-                <div className="form-status success">
-                  {formStatus}
-                </div>
-              )}
-              <div className="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary btn-submit">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="footer">
